@@ -25,15 +25,14 @@ class Task
     private function insertTask()
     {
         try {
-            $query = "INSERT INTO `tasks` (`subject`, `priority`, `dueDate`, `status`)
-VALUES(:subject, :priority, :dueDate, :status)";
+            $query = "INSERT INTO `task` (`subject`, `priority`, `dueDate`, `status`) VALUES (:subject, :priority, :dueDate, :status)";
             $stmt = $this->pdo->prepare($query);
             $stmt->bindParam(':subject', $this->subject, PDO::PARAM_STR);
             $stmt->bindParam(':priority', $this->priority, PDO::PARAM_STR);
             $stmt->bindParam(':dueDate', $this->dueDate, PDO::PARAM_STR);
             $stmt->bindParam(':status', $this->status, PDO::PARAM_STR);
             $stmt->execute();
-            header('Location:/'); // kai uzduotis done, grazina i pradini psl
+            header('Location:/php_todo'); // kai uzduotis done, grazina i pradini psl
 
         } catch (PDOException $e) {
             echo $e->getMessage();

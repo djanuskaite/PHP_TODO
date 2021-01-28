@@ -14,12 +14,10 @@ class DB {
     public static function connect()
     {
         try {
-            return $pdo = new PDO(
-                self::$connection.';dbname='.self::$database,
+            return $pdo= new PDO(self::$connection .';dbname=' .self::$database,
                 self::$user,
                 self::$password,
-                self::$options
-            );
+                self::$options);;
         } catch (PDOException $e) {
             die($e->getMessage());
         }
