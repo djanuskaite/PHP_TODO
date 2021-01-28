@@ -1,10 +1,11 @@
 
+
 {
   "autoload": {
     "name": "todolist",
     "description": "description",
     "psr-4": {
-      "ToDo\\": "app"
+      "TaskManager\\": "app"
     }
   }
 }
