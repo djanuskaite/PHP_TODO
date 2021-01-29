@@ -46,13 +46,13 @@ $title = "Tasks list";
             <tbody id="tableBody">
             <?php foreach ($tasks->allTasks() as $task): ?>
             <tr>
-                <td scope="col" class="text-center"><a href="/complete-task/id/<?= $task['id']; ?>">Complete</a></td>
+                <td scope="col" class="text-center"><a href="complete-task/id/<?= $task['id']; ?>">Complete</a></td>
 
                 <td scope="col" class="text-center"><?= $task['subject']; ?></td>
                 <td scope="col" class="text-center"><?= $task['priority']; ?></td>
                 <td scope="col" class="text-center"><?= $task['dueDate']; ?></td>
 
-                <td scope="col" class="text-center"><a href="/delete-task/id/<?= $task['id']; ?>">Delete</a></td>
+                <td scope="col" class="text-center"><a href="delete-task/id/<?= $task['id']; ?>">Delete</a></td>
             </tr>
             </tbody>
             <?php endforeach; ?>
