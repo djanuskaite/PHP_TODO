@@ -16,9 +16,10 @@ class Task
     }
 
     public function createTask($task) {
+        var_dump($task);
         $this->subject = $task['subject'];
         $this->priority = $task['priority'];
-        $this->dueDate = $task['duedate'];
+        $this->dueDate = $task['dueDate'];
         $this->insertTask();
     }
 
@@ -39,8 +40,35 @@ class Task
         }
     }
 
-//    public function allTasks()
-//    {
-//
-//    }
+    public function allTasks()
+    {
+        $statement = $this->pdo->prepare("select * from task");
+
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+    public function deleteTask($id){
+        $statement =$this->pdo->prepare("DELETE FROM `tasks` WHERE id = $id");
+        $statement->execute();
+        header('Location:/php_todo');
+        return $statement;
+    }
+
+    public  function setComplete($id){
+        $this->status=1;
+        try {
+            $query = "UPDATE tasks SET `status` = :status WHERE id=:id";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->bindParam(':status', $this->status, PDO::PARAM_STR);
+            $stmt->bindValue(':id',$id,PDO::PARAM_STR);
+            $stmt->execute();
+            header('Location:/php_todo');
+        }catch (\PDOException $e){
+            echo $e->getMessage();
+        }
+        $conn = null;
+    }
 }

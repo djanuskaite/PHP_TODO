@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97304cdb-1619-49e2-800a-31d0d8352509" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/complete-task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/delete-task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/_partials/footer.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/_partials/header.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/home.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/pages/new-task.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/pages/new-task.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +61,9 @@
       <workItem from="1611648188356" duration="5452000" />
       <workItem from="1611674540634" duration="25000" />
       <workItem from="1611815079348" duration="11707000" />
-      <workItem from="1611846701050" duration="2631000" />
+      <workItem from="1611846701050" duration="2975000" />
+      <workItem from="1611906883898" duration="6156000" />
+      <workItem from="1611933570626" duration="5179000" />
     </task>
     <task id="LOCAL-00001" summary="HTML+CSS">
       <created>1611650916715</created>
@@ -82,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611847223584</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="router pdo new veikia">
+      <created>1611849653500</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611849653500</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +110,8 @@
     <MESSAGE value="HTML+CSS" />
     <MESSAGE value="router" />
     <MESSAGE value="router pdo new" />
-    <option name="LAST_COMMIT_MESSAGE" value="router pdo new" />
+    <MESSAGE value="router pdo new veikia" />
+    <option name="LAST_COMMIT_MESSAGE" value="router pdo new veikia" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="254" key="#SQL_Dialects" timestamp="1611826655129">
@@ -111,10 +130,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="882" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611819072943" />
-    <state x="355" y="0" key="CommitChangelistDialog2" timestamp="1611847222901">
+    <state x="355" y="0" key="CommitChangelistDialog2" timestamp="1611849652910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="355" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1611847222901" />
+    <state x="355" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1611849652910" />
     <state x="536" y="169" key="FileChooserDialogImpl" timestamp="1611674563656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -131,9 +150,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="86" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611827247579" />
-    <state x="-170" y="43" key="Vcs.Push.Dialog.v2" timestamp="1611847229146">
+    <state x="261" y="81" key="Vcs.Push.Dialog.v2" timestamp="1611849658913">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-170" y="43" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611847229146" />
+    <state x="261" y="81" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611849658913" />
+    <state x="363" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611911792685">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="363" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1611911792685" />
   </component>
 </project>
