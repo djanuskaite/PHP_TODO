@@ -10,13 +10,35 @@
     <title>Document</title>
 </head>
 <body>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #fffaf6;
+    }
+
+    #form {
+        width: 80%;
+        margin:auto;
+    }
+
+    .btn {
+        background-color: #b9a195;
+    }
+
+</style>
+
 <?php include ("view/_partials/header.view.php"); ?>
 
 <?php
 $title = "Add new task";
 ?>
 
-<h2><?=$title;?></h2>
+<h2 class="text-center m-5"><?=$title;?></h2>
 
 <form method="post" class="col mx-auto" id="form">
     <div class="form-group row">
@@ -45,8 +67,8 @@ $title = "Add new task";
         </div>
     </div>
 
-    <div class="form-group">
-    <button type="submit" name="send" class="btn btn-light">Add Task</button>
+    <div class="form-group text-center">
+    <button type="submit" name="send" class="btn">Add Task</button>
     </div>
 </form>
 
