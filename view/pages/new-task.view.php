@@ -40,6 +40,12 @@ $title = "Add new task";
 
 <h2 class="text-center m-5"><?=$title;?></h2>
 
+<?php if (!empty($validate)): ?>
+    <?php foreach ($validate as $error): ?>
+        <div class="alert alert-danger"><?= $error; ?></div>
+    <?php endforeach; ?>
+<?php endif; ?>
+
 <form method="post" class="col mx-auto" id="form">
     <div class="form-group row">
         <label for="subject" class="col-sm-2 col-form-label">Subject</label>
@@ -53,9 +59,9 @@ $title = "Add new task";
         <div class="col-sm-10">
             <select id="priority" class="form-control" name="priority">
                 <option value="" disabled selected>Choose</option>
-                <option>Low</option>
-                <option>Normal</option>
-                <option>High</option>
+                <?php foreach ($priority as $value): ?>
+                    <option value="<?= $value; ?>"><?= ucfirst($value); ?></option>
+                <?php endforeach; ?>
             </select>
         </div>
     </div>

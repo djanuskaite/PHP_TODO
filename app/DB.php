@@ -9,7 +9,7 @@ class DB {
     private static $database = 'phptable';
     private static $options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
-    ];
+    ]; // error mode
 
     public static function connect()
     {
